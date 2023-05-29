@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark text-white">
+    <nav class="navbar bg-dark">
+        <div>
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Bootstrap" width="100">
+          </a>
+        </div>
+      </nav>
+      <h1 class="text-center"> Pesquisa de Paises de Paises</h1>
+
+      <div class="container  input-group mb-3">
+        <input type="text" id="pais" class="form-control" placeholder="Digite o nome do País emm inglês" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="Procurar()" class="bg-primary text-white btn btn-outline-secondary" type="button" id="button-addon2"> Procurar </button>
+      </div>
+      
+      <div id="card" class="container text-center card p-3" style="width: 18rem;">
+        <img id="bandeira"  class="card-img-top" >
+        <div class="card-body">
+
+          <h5 class="card-title" id="nome">Pais</h5>
+    
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Capital</strong></li>
+          <p id="capi">teste</p>
+
+          <li class="list-group-item"><strong>Continente</strong></li>
+          <p id="cont">teste</p>
+
+          <li class="list-group-item"><strong>População</strong></li>
+          <p id="popu">teste</p>
+        </ul>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
